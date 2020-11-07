@@ -18,8 +18,12 @@
         "symfony/console": "*",
         "symfony/dotenv": "*",
         "symfony/framework-bundle": "*",
+        "symfony/orm-pack": "*",
         "symfony/yaml": "*"
     },
+    "flex-require-dev":{
+        "symfony/maker-bundle": "*"
+    }
     "require-dev": {
     },
     "config": {
