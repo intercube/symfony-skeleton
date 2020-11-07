@@ -22,9 +22,9 @@
         "symfony/yaml": "*"
     },
     "flex-require-dev": {
-        "symfony/maker-bundle": "*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "*"
     },
     "config": {
         "optimize-autoloader": true,
