@@ -18,7 +18,7 @@
         "symfony/console": "*",
         "symfony/dotenv": "*",
         "symfony/framework-bundle": "*",
-        "symfony/orm-pack": "*",
+        "symfony/orm-pack": "2.0.0",
         "symfony/yaml": "*"
     },
     "flex-require-dev": {
