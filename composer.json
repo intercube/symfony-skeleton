@@ -21,9 +21,9 @@
         "symfony/orm-pack": "*",
         "symfony/yaml": "*"
     },
-    "flex-require-dev":{
+    "flex-require-dev": {
         "symfony/maker-bundle": "*"
-    }
+    },
     "require-dev": {
     },
     "config": {
