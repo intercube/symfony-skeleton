@@ -1,0 +1,24 @@
+# Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
+fos_rest:
+    body_listener: true
+    body_converter:
+        enabled: true
+        validate: true
+        validation_errors_argument: validationErrors
+    format_listener:
+        rules:
+            - { path: '^/', priorities: ['json'], fallback_format: json, prefer_extension: false }
+    param_fetcher_listener: true
+    allowed_methods_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            json: true
+    serializer:
+        serialize_null: true
+    exception:
+        codes:
+            Symfony\Component\Routing\Exception\ResourceNotFoundException: 404
+            Doctrine\ORM\OptimisticLockException: HTTP_CONFLICT
+        messages:
+            Symfony\Component\HttpKernel\Exception\HttpException: true
